@@ -24,8 +24,9 @@ DRiLLS requires `Python 3.6`, `pip3` and `virtualenv` installed on the system.
 
 1. Run `python ppo.py `
 2. Run `python dqn.py `
-
 each model produces a text file with optimized selection of hashes
+
+If you want to test Environment you can run `python test_env.py`
 
 ## How It Works
 There are two major components in DRiLLS framework: 

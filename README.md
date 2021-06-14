@@ -5,9 +5,9 @@ Deep Reinforcement Learning for Fees Optimization
 
 Bitcoin miners construct blocks by selecting a set of transactions from their mempool. Each transaction in the mempool: 
 
-1. includes a fee which is collected by the miner if that transaction is included in a block 
-2. has a weight, which indicates the size of the transaction 
-3. may have one or more parent transactions which are also in the mempool 
+* includes a fee which is collected by the miner if that transaction is included in a block 
+* has a weight, which indicates the size of the transaction 
+* may have one or more parent transactions which are also in the mempool 
 
 The miner selects an ordered list of transactions which have a combined weight below the maximum block weight. Transactions with parent transactions in the mempool may be included in the list, but only if all of their parents appear before them in the list. Naturally, the miner would like to include the transactions that maximize the total fee.
 Here i am using Reiforcement learning to maximize my total my fee keeping the weight in check
@@ -16,14 +16,14 @@ Here i am using Reiforcement learning to maximize my total my fee keeping the we
 ## Setup
 DRiLLS requires `Python 3.6`, `pip3` and `virtualenv` installed on the system.
 
-1. `virtualenv .venv --python=python3`
-2. `source .venv/bin/activate`
-3. `pip install -r requirements.txt`
+*  `virtualenv .venv --python=python3`
+*  `source .venv/bin/activate`
+*  `pip install -r requirements.txt`
 
 ## Run the Models
 
-1. Run `python ppo.py `
-2. Run `python dqn.py `
+*  Run `python ppo.py `
+*  Run `python dqn.py `
 each model produces a text file with optimized selection of hashes
 
 If you want to test Environment you can run `python test_env.py`

@@ -27,14 +27,6 @@ DRiLLS requires `Python 3.6`, `pip3` and `virtualenv` installed on the system.
 
 each model produces a text file with optimized selection of hashes
 
-### Study An Enhanced Model
-The goal is to enhance the model architecture used in [drills/model.py]. An enhancement should give better results (less area **AND** meets timing constraints):
-* Deeper network architecure. 
-* Changing gamma rate.
-* Changing learning rate.
-* Improve normalization.
-
-
 ## How It Works
 There are two major components in DRiLLS framework: 
 
@@ -46,3 +38,12 @@ DRiLLS agent exploring the design space of [Max](https://github.com/lsils/benchm
 ![](https://media.giphy.com/media/XbbW4WjeLuqneVbGEU/giphy.gif)
 
 For more details on the inner-workings of the framework, see Section 4 in [the paper](https://github.com/scale-lab/DRiLLS/blob/drills-preprint/doc/preprint/DRiLLS_preprint_AH.pdf).
+
+### Results of Models
+Before going to the results here are some important statistics to compare the solutions:
+* **Average Fees earned** - So in starting i have checked the mean of fee in the dataset which is around `1456` with average weight of `2000` so if we do basic calculation then we can get `2000` transaction in a weight of `4,000,000` so if we have `2000` transactions with `1456` fee per transaction then total fee would be `2,912,000` 
+* **PPO Model Results** - With this approach I have got around `3,444,175` fees with weight around `4,000,538`
+* **DQN Model Results** - From this I got `3,096,998` fees with weight of `4,011,052`
+* both of the optimized fees is greater than the average also **PPO** model works best with a good of `532,175` as compared to `184,998` of **DQN** network
+
+

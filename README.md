@@ -30,14 +30,12 @@ each model produces a text file with optimized selection of hashes
 ## How It Works
 There are two major components in DRiLLS framework: 
 
-* **Logic Synthesis** environment: a setup of the design space exploration problem as a reinforcement learning task. The logic synthesis environment is implemented as a session in [drills/scl_session.py](drills/scl_session.py) and [drills/fpga_session.py](drills/fpga_session.py).
+* **Custom environment**: a setup of the design space exploration problem as a reinforcement learning task. The logic synthesis environment is implemented as a session in [drills/env.py](drills/env.py).
 * **Reinforcement Learning** environment: it employs an *Advantage Actor Critic agent (A2C)* to navigate the environment searching for the best optimization at a given state. It is implemented in [drills/model.py](drills/model.py) and uses [drills/features.py](drills/features.py) to extract AIG features.
 
 DRiLLS agent exploring the design space of [Max](https://github.com/lsils/benchmarks/blob/master/arithmetic/max.v) design.
 
-![](https://media.giphy.com/media/XbbW4WjeLuqneVbGEU/giphy.gif)
-
-For more details on the inner-workings of the framework, see Section 4 in [the paper](https://github.com/scale-lab/DRiLLS/blob/drills-preprint/doc/preprint/DRiLLS_preprint_AH.pdf).
+For more details on the inner-workings of the framework, see in [the article](https://openai.com/blog/openai-baselines-ppo) and [in article](https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html)
 
 ### Results of Models
 Before going to the results here are some important statistics to compare the solutions:

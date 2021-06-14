@@ -1,6 +1,7 @@
 # BTC_mining_fees_optimization_RL <img align="right" width="10%" src="https://s3.envato.com/files/230419052/preview.jpg">
 Deep Reinforcement Learning for Fees Optimization
 
+sorry for typos :) 
 ## Abstract
 
 Bitcoin miners construct blocks by selecting a set of transactions from their mempool. Each transaction in the mempool: 

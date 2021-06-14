@@ -30,7 +30,8 @@ each model produces a text file with optimized selection of hashes
 ## How It Works
 There are two major components in DRiLLS framework: 
 
-* **Custom environment**: The main time and effort to develop this project comes from designing a custom environment where the agents can do space exploration and with this we can solve this problem as a reinforcement learning task. This environment is implemented as a session in [env.py](BTC_mining_fees_optimization_RL/env.py). To describe the environment **if the agent chooses a transaction which could decrease the Running Average of Total Aggregated Fees** then my environment will award a score of **-1** else the agent will get a reward of **+1**. Keeping the total weight of transaction less than `4,000,000`.
+* **Custom environment**: The main time and effort to develop this project comes from designing a custom environment where the agents can do space exploration and with this we can solve this problem as a reinforcement learning task. This environment is implemented as a session in [env.py](BTC_mining_fees_optimization_RL/env.py). To describe the environment **if the agent chooses a transaction which could decrease the Running Average of Total Aggregated Fees** then my environment will award a score of **-1** else the agent will get a reward of **+1**. Keeping the total weight of transaction less than `4,000,000`.Also the action the agent can take is either to select a transaction or not depending on the rewards condition.
+
 * **Reinforcement Learning** environment: it employs an *Advantage Actor Critic agent (A2C)* to navigate the environment searching for the best optimization at a given state. It is implemented in [PPO.py](BTC_mining_fees_optimization_RL/PPO.py).
 
 DRiLLS agent exploring the design space of [Max](https://github.com/lsils/benchmarks/blob/master/arithmetic/max.v) design.

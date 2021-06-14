@@ -35,7 +35,7 @@ There are two major components in DRiLLS framework:
 
 DRiLLS agent exploring the design space of [Max](https://github.com/lsils/benchmarks/blob/master/arithmetic/max.v) design.
 
-For more details on the inner-workings of the framework, see in [the article](https://openai.com/blog/openai-baselines-ppo) and [in article](https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html)
+For more details on the inner-workings of the framework, see in [this article on PPO](https://openai.com/blog/openai-baselines-ppo) and [in this documentation on DQN](https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html)
 
 ### Results of Models
 Before going to the results here are some important statistics to compare the solutions:

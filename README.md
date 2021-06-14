@@ -35,9 +35,8 @@ There are two major components in DRiLLS framework:
 * Keeping the total weight of transaction less than `4,000,000`.
 * Also the action the agent can take is either to select a transaction or not depending on the rewards condition.
 
-* **Reinforcement Learning** environment: it employs an *Advantage Actor Critic agent (A2C)* to navigate the environment searching for the best optimization at a given state. It is implemented in [PPO.py](BTC_mining_fees_optimization_RL/PPO.py).
-
-DRiLLS agent exploring the design space of [Max](https://github.com/lsils/benchmarks/blob/master/arithmetic/max.v) design.
+* **Reinforcement Learning Algorithms**: Here I employs an *Proximal Policy Optimization (PPO)* to navigate the environment searching for the best optimization at a given state. It is implemented in [PPO.py](BTC_mining_fees_optimization_RL/PPO.py). Also i have used *Deep Q Learning (DQN)* to create a comparitive study with the PPO algorithm. In my experiments PPO out performed DQN with a Good margin.
+* All of these Models are created with *stable_baselines3* modules for fast prototyping and its fairly a very good project to create a RL based MVP.
 
 For more details on the inner-workings of the framework, see in [this article on PPO](https://openai.com/blog/openai-baselines-ppo) and [in this documentation on DQN](https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html)
 
@@ -48,4 +47,9 @@ Before going to the results here are some important statistics to compare the so
 * **DQN Model Results** - From this I got `3,096,998` fees with weight of `4,011,052`
 * both of the optimized fees is greater than the average also **PPO** model works best with a good of `532,175` as compared to `184,998` of **DQN** network
 
+### What could be improved
+* Selection startegy or the way we can select the transaction from the mempool could be improved. In this project i have used Uniform distribution for selecting the items
+* The way of judging the policy like i have used Running Mean we could use any other criteria
+* Instead of binary reward of *1* , *-1* we can give a dynamic reward between this range
 
+Lastly I also created a baseline pure Dynamic Programming solution but the complexity of O(len(csv) * Max_weight) just couldn't able to produce results in meaning fulltime(takes hrs) compared to other approaches which are fairly faster(complete in mins). 

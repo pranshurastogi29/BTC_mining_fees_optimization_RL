@@ -1,4 +1,4 @@
-# DRiLLS <img align="right" width="10%" src="doc/img/drills-logo.png">
+# DRiLLS <img align="right" width="10%" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fgraphicriver.net%2Fitem%2Fcrypto-currency-bitcoin%2F20340702&psig=AOvVaw3hFmqUUmQbYhBXnfZ9pAi8&ust=1623772007264000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLDEzfO8l_ECFQAAAAAdAAAAABAZ">
 Deep Reinforcement Learning for Logic Synthesis Optimization
 
 ## Abstract

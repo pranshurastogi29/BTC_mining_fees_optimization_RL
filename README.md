@@ -46,7 +46,7 @@ Before going to the results here are some important statistics to compare the so
 * **Average Fees earned** - So in starting i have checked the mean of fee in the dataset which is around `1456` with average weight of `2000` so if we do basic calculation then we can get `2000` transaction in a weight of `4,000,000` so if we have `2000` transactions with `1456` fee per transaction then total fee would be `2,912,000` 
 * **PPO Model Results** - With this approach I have got around `3,444,175` fees with weight around `4,000,538`.
 * **DQN Model Results** - From this I got `3,096,998` fees with weight of `4,011,052`.
-* both of the optimized fees is greater than the average also **PPO** model works best with a good of `532,175` as compared to `184,998` of **DQN** network
+* Both of the optimized fees is greater than the average also **PPO** model works best with a good of `532,175` as compared to `184,998` of **DQN** network
 
 ### What could be improved
 * Selection startegy or the way we can select the transaction from the mempool could be improved. In this project i have used Uniform distribution for selecting the items

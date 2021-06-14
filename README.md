@@ -52,4 +52,4 @@ Before going to the results here are some important statistics to compare the so
 * The way of judging the policy like i have used Running Mean we could use any other criteria
 * Instead of binary reward of *1* , *-1* we can give a dynamic reward between this range
 
-Lastly I also created a baseline pure Dynamic Programming solution but the complexity of O(len(csv) * Max_weight) just couldn't able to produce results in meaning fulltime(takes hrs) compared to other approaches which are fairly faster(complete in mins). 
+Lastly I also created a baseline pure Dynamic Programming solution but the complexity of **O(len(csv) * Max_weight)** just couldn't able to produce results in meaning fulltime(takes hrs) compared to other approaches which are fairly faster(complete in mins). 

@@ -24,6 +24,7 @@ DRiLLS requires `Python 3.6`, `pip3` and `virtualenv` installed on the system.
 
 1. Run `python ppo.py `
 2. Run `python dqn.py `
+
 each model produces a text file with optimized selection of hashes
 
 ### Study An Enhanced Model
@@ -35,8 +36,6 @@ The goal is to enhance the model architecture used in [drills/model.py]. An enha
 
 
 ## How It Works
-<img src="doc/img/drills-architecture.png" width="70%" style="display: block;  margin: 0 auto;">
-
 There are two major components in DRiLLS framework: 
 
 * **Logic Synthesis** environment: a setup of the design space exploration problem as a reinforcement learning task. The logic synthesis environment is implemented as a session in [drills/scl_session.py](drills/scl_session.py) and [drills/fpga_session.py](drills/fpga_session.py).
